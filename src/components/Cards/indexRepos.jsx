@@ -2,8 +2,9 @@ import { CardContent, Typography } from "@mui/material";
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import moment from "moment/moment";
 import styles from '../../pages/Profile/Profile.module.css';
+import { Link } from "react-router-dom";
 
-export function CardRepos({reposName, stars, description, update}) {
+export function CardRepos({reposName, stars, description, update, user}) {
 
     const today = moment();
     const days = today.diff(update, "days");
@@ -11,7 +12,7 @@ export function CardRepos({reposName, stars, description, update}) {
     return (
         <CardContent>
             <Typography style={{fontWeight: "bold"}} variant="h5" component="div">
-                {reposName}
+                <Link to={`https://github.com/${user}/${reposName}`} target="_blank">{reposName}</Link>
             </Typography>
             <br/>
             <Typography variant="body2">

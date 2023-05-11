@@ -25,7 +25,7 @@ export function Profile() {
                     await axios
                         .get(`https://api.github.com/users/${user}/repos`)
                         .then((res) => {
-                            setlistRepositorio(res.data);
+                            setlistRepositorio(res.data && res.data.sort((a, b) => b.stargazers_count - a.stargazers_count));
                         })
                         .catch(e => console.log(e));
                 })
@@ -69,6 +69,7 @@ export function Profile() {
                     {listRepositorio && listRepositorio.map((obj) => {
                         return (
                             <CardRepos
+                                user={user}
                                 reposName={obj.name}
                                 stars={obj.stargazers_count}
                                 description={obj.description}
