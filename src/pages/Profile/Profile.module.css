@@ -1,0 +1,64 @@
+.details {
+    display: flex;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+.contato button {
+    background-color: #8C19D2;
+    width: -webkit-fill-available;
+}
+
+.contato button:hover {
+    background-color: #8C19D2;
+}
+
+.image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.logoName {
+    margin-left: 9em;
+}
+
+.navbar input {
+    width:  590px;
+    margin-left: 8em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 35px;
+}
+
+.searchTittle {
+    color: #0069CA;
+    margin-right: 10px;
+    font-size: 38px;
+}
+
+.devsTitle {
+    color: #8C19D2;
+    font-size: 38px;
+}

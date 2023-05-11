@@ -1,0 +1,39 @@
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.searchTittle {
+    color: #0069CA;
+    margin-right: 20px;
+    font-size: 80px;
+    font-family: 'Nunito';
+}
+
+.devsTitle {
+    color: #8C19D2;
+    font-size: 80px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.search input {
+    width:  25%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 30px;
+}
+
+.search button {
+    background-color: #8C19D2;
+}
+
+.search button:hover {
+    background-color: #8C19D2;
+}
