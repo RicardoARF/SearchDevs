@@ -12,7 +12,7 @@ export function CardRepos({reposName, stars, description, update, user}) {
     return (
         <CardContent>
             <Typography style={{fontWeight: "bold"}} variant="h5" component="div">
-                <Link to={`https://github.com/${user}/${reposName}`} target="_blank">{reposName}</Link>
+                <Link style={{textDecoration: "none", color: "black"}}  to={`https://github.com/${user}/${reposName}`} target="_blank">{reposName}</Link>
             </Typography>
             <br/>
             <Typography variant="body2">
